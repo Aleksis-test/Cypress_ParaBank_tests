@@ -37,7 +37,7 @@ Przed każdą sesją testową musisz ponownie zarejestrować użytkownika `Alex`
 1. Sklonuj repozytorium:
 
 ````bash
-git clone https://github.com/Aleksis-test/Cypress_Demoblaze_tests
+git clone https://github.com/Aleksis-test/Cypress_ParaBank_tests.git
 
 2. Zainstaluj zależności
 ```bash
