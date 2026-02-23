@@ -1,0 +1,32 @@
+[
+  {
+    "id": 11111,
+    "type": "CHECKING",
+    "balance": 1000.00,
+    "available": 1000.00
+  },
+  {
+    "id": 22222,
+    "type": "SAVINGS",
+    "balance": 2000.00,
+    "available": 2000.00
+  },
+  {
+    "id": 33333,
+    "type": "CHECKING",
+    "balance": 3000.00,
+    "available": 3000.00
+  },
+  {
+    "id": 44444,
+    "type": "SAVINGS",
+    "balance": 4000.00,
+    "available": 4000.00
+  },
+  {
+    "id": 55555,
+    "type": "CHECKING",
+    "balance": 5000.00,
+    "available": 5000.00
+  }
+]

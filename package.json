@@ -1,0 +1,19 @@
+{
+	"devDependencies": {
+		"cypress": "^15.10.0"
+	},
+	"name": "parabank-cypress",
+	"version": "1.0.0",
+	"description": "automatyzacja testów w cypress",
+	"main": "index.js",
+	"scripts": {
+		"test": "cypress run"
+	},
+	"keywords": [
+		"automatyzacja",
+		"cypress",
+		"testy"
+	],
+	"author": "Aleksandra Janas",
+	"license": "ISC"
+}

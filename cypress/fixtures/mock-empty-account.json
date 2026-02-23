@@ -1,0 +1,10 @@
+{
+  "accounts": [
+    {
+      "id": 9876,
+      "type": "CHECKING",
+      "balance": 0.00,
+      "customerId": 999
+    }
+  ]
+}

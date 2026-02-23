@@ -1,0 +1,14 @@
+[
+  {
+    "id": 22646,
+    "type": "CHECKING",
+    "balance": 15000.50,
+    "available": 15000.50
+  },
+  {
+    "id": 22647,
+    "type": "SAVINGS",
+    "balance": 50000.75,
+    "available": 50000.75
+  }
+]
