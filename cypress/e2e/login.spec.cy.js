@@ -54,10 +54,10 @@ describe('Login wrong data', () => {
 		cy.get('[value="Log In"]').click();
 		cy.url().should('include', 'overview');
 	});
-    it("TC-012 Logout",()=>{
-        cy.login('Alex', 'Testowe123');
+	it('TC-012 Logout', () => {
+		cy.login('Alex', 'Testowe123');
 		cy.url().should('include', 'overview');
-        cy.contains("a", "Log Out").click()
-        cy.get('[value="Log In"]').should("be.visible")
-    })
+		cy.contains('a', 'Log Out').click();
+		cy.get('[value="Log In"]').should('be.visible');
+	});
 });
