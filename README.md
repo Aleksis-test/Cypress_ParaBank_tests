@@ -67,6 +67,9 @@ npx cypress open
 ---Raport z testów
 (docs/Raport Testów.docx)
 
+---Logi z Jenkis CI/CD
+(docs/Jenkins.log.txt)
+
 🧪 Opis testów
 
 ***registration.cy.js
