@@ -5,7 +5,7 @@ describe('New Accouns in bank', () => {
 	beforeEach(() => {
 		LoginPage.visit().login('Alex', 'Testowe123').verifyLoginSuccess();
 	});
-	it('TC-022 Should create a new account and display it in accounts list', () => {
+	it('TC-019 Should create a new account and display it in accounts list', () => {
 		cy.contains('a', 'Open New Account').click();
 		cy.get('#fromAccountId').select(0);
 		cy.get('[value="Open New Account"]').click();
@@ -16,13 +16,13 @@ describe('New Accouns in bank', () => {
 			cy.get('#accountTable').should('contain', newAccountId);
 		});
 	});
-	it('TC-023 Should open account using specific account as source', () => {
+	it('TC-020 Should open account using specific account as source', () => {
 		cy.contains('a', 'Open New Account').click();
 		cy.get('#fromAccountId').select(1);
 		cy.get('[value="Open New Account"]').click();
 		cy.get('#newAccountId').should('be.visible');
 	});
-	it('TC-024 Should verify source account balance decreased by 100 after opening new account', () => {
+	it('TC-021 Should verify source account balance decreased by 100 after opening new account', () => {
 		cy.contains('a', 'Accounts Overview').click();
 
 		cy.get('#accountTable tbody tr')

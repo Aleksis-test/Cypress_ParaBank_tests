@@ -1,4 +1,3 @@
-markdown
 
 # Projekt testów Cypress
 

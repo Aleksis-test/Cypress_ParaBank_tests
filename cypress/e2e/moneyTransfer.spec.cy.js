@@ -4,7 +4,7 @@ describe('Money transfer', () => {
 	beforeEach(() => {
 		LoginPage.visit().login('Alex', 'Testowe123').verifyLoginSuccess();
 	});
-	it('TC-025 Transferring money to the same account', () => {
+	it('TC-022 Transferring money to the same account', () => {
 		cy.contains('a', 'Transfer Funds').click();
 		cy.get('#transferForm').should('be.visible');
 		cy.get('#fromAccountId').select(0);
@@ -12,7 +12,7 @@ describe('Money transfer', () => {
 		cy.get('.button[value="Transfer"]').click();
 		cy.get('.error').should('be.visible');
 	});
-	it('TC-026 Should transfer $200 and update balances correctly', () => {
+	it('TC-023 Should transfer $200 and update balances correctly', () => {
 		cy.contains('a', 'Accounts Overview').click();
 		cy.get('#accountTable tbody tr')
 			.eq(0)
@@ -74,7 +74,7 @@ describe('Money transfer', () => {
 					});
 			});
 	});
-	it('TC-027 BUG! Should NOT allow transferring $0', () => {
+	it('TC-024 BUG! Should NOT allow transferring $0', () => {
 		cy.contains('a', 'Transfer Funds').click();
 		cy.get('#fromAccountId').select(0);
 		cy.get('#toAccountId').select(1);
