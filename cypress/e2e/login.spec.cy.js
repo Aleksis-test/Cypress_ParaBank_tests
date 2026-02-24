@@ -12,14 +12,14 @@ describe('Login wrong data', () => {
 		cy.visit('https://parabank.parasoft.com/parabank/register.htm');
 	});
 
-	it('TC-006 Wrong username - BUG', () => {
+	it('TC-006 Wrong username', () => {
 		cy.get('[name="username"]').type('nieistnieje55555555');
 		cy.get('[name="password"]').type('Testowe123');
 		cy.get('[value="Log In"]').click();
 		cy.get('.error').should('be.visible');
 	});
 
-	it('TC-007 Wrong password - BUG', () => {
+	it('TC-007 Wrong password', () => {
 		cy.get('[name="username"]').type('Alexisis');
 		cy.get('[name="password"]').type('zlehaslo');
 		cy.get('[value="Log In"]').click();
